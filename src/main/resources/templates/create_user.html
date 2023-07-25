@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>User Management</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">User Management System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" th:href="@{/users/new}">New User<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" th:href="@{/users}">User <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br /><br />
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h2 class="text-center"> Create User</h2>
+    </div>
+    <div class="card-body">
+      <form
+              method="post"
+              role="form"
+              th:action="@{/users}"
+              th:object="${user}"
+      >
+        <div class="form-group mb-3">
+          <label class="form-label">User First Name</label>
+          <input
+                  class="form-control"
+                  id="firstName"
+                  placeholder="Enter first name"
+                  type="text"
+                  th:field="*{firstName}"
+          />
+          <p th:if="${#fields.hasErrors('firstName')}" class="text-danger"
+             th:errors="*{firstName}"></p>
+        </div>
+        <div class="form-group mb-3">
+          <label class="form-label">User Last Name</label>
+          <input
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Enter last name"
+                  type="text"
+                  th:field="*{lastName}"
+          />
+          <p th:if="${#fields.hasErrors('lastName')}" class="text-danger"
+             th:errors="*{lastName}"></p>
+        </div>
+        <div class="form-group mb-3">
+          <label class="form-label">User Email</label>
+          <input
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  type="text"
+                  th:field="*{email}"
+          />
+          <p th:if="${#fields.hasErrors('email')}" class="text-danger"
+             th:errors="*{email}"></p>
+        </div>
+
+        <div class="form-group mb-3">
+          <label class="form-label">User Phone Number</label>
+          <input
+                  class="form-control"
+                  id="phoneNumber"
+                  placeholder="Enter Phone Number"
+                  type="text"
+                  th:field="*{phoneNumber}"
+          />
+          <p th:if="${#fields.hasErrors('phoneNumber')}" class="text-danger"
+             th:errors="*{phoneNumber}"></p>
+        </div>
+
+        <button clas="btn btn-primary" type="submit">Submit</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

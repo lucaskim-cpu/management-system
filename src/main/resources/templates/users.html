@@ -40,6 +40,7 @@
             <th>User First Name</th>
             <th>User Last Name</th>
             <th>User Email</th>
+            <th>User Phone Number</th>
             <th>Actions</th>
         </tr>
         </thead>
@@ -48,6 +49,7 @@
             <td th:text="${user.firstName}"></td>
             <td th:text="${user.lastName}"></td>
             <td th:text="${user.email}"></td>
+            <td th:text="${user.phoneNumber}"></td>
             <td>
                 <a class="btn btn-primary" th:href="@{/users/{userId}/edit(userId=${user.id})}">Edit</a>
                 <a class="btn btn-danger" th:href="@{/users/{userId}/delete(userId=${user.id})}">Delete</a>
