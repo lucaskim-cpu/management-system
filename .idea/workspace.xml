@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05acb912-b7a8-4f1b-ae33-e24a1bf6e198" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="05acb912-b7a8-4f1b-ae33-e24a1bf6e198" name="Changes" comment="created userDto class&#10;created a mapper to map between user and userDto&#10;created UserRepository class to implement CRUD methods on User object">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/usermanagementsystem/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/usermanagementsystem/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/springboot/usermanagementsystem/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -126,7 +124,7 @@
       <updated>1690079690009</updated>
       <workItem from="1690079691216" duration="24453000" />
       <workItem from="1690229017549" duration="3183000" />
-      <workItem from="1690232394395" duration="1336000" />
+      <workItem from="1690232394395" duration="2674000" />
     </task>
     <task id="LOCAL-00001" summary="edited README.md&#10;added intial spring boot starter files and dependencies">
       <option name="closed" value="true" />
@@ -144,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690232106306</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added User class&#10;Configured database to project">
+      <option name="closed" value="true" />
+      <created>1690243819663</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690243819663</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +161,7 @@
     <MESSAGE value="edited README.md&#10;added intial spring boot starter files and dependencies" />
     <MESSAGE value="Added User class" />
     <MESSAGE value="Added User class&#10;Configured database to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added User class&#10;Configured database to project" />
+    <MESSAGE value="created userDto class&#10;created a mapper to map between user and userDto&#10;created UserRepository class to implement CRUD methods on User object" />
+    <option name="LAST_COMMIT_MESSAGE" value="created userDto class&#10;created a mapper to map between user and userDto&#10;created UserRepository class to implement CRUD methods on User object" />
   </component>
 </project>
