@@ -1,5 +1,4 @@
 package com.springboot.usermanagementsystem.mapper;
-
 import com.springboot.usermanagementsystem.dto.UserDto;
 import com.springboot.usermanagementsystem.entity.User;
 
