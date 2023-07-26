@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05acb912-b7a8-4f1b-ae33-e24a1bf6e198" name="Changes" comment="Added UserController, UserServiceImpl, UserService, and users.html">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/create_user.html" afterDir="false" />
+    <list default="true" id="05acb912-b7a8-4f1b-ae33-e24a1bf6e198" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/edit_user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/usermanagementsystem/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/usermanagementsystem/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/usermanagementsystem/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/usermanagementsystem/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/springboot/usermanagementsystem/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/springboot/usermanagementsystem/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +125,7 @@
       <updated>1690079690009</updated>
       <workItem from="1690079691216" duration="24453000" />
       <workItem from="1690229017549" duration="3183000" />
-      <workItem from="1690232394395" duration="6247000" />
+      <workItem from="1690232394395" duration="8492000" />
     </task>
     <task id="LOCAL-00001" summary="edited README.md&#10;added intial spring boot starter files and dependencies">
       <option name="closed" value="true" />
@@ -168,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690320750491</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added creating users functionality">
+      <option name="closed" value="true" />
+      <created>1690322100877</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690322100877</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +188,7 @@
     <MESSAGE value="Added User class&#10;Configured database to project" />
     <MESSAGE value="created userDto class&#10;created a mapper to map between user and userDto&#10;created UserRepository class to implement CRUD methods on User object" />
     <MESSAGE value="Added UserController, UserServiceImpl, UserService, and users.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added UserController, UserServiceImpl, UserService, and users.html" />
+    <MESSAGE value="Added creating users functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added creating users functionality" />
   </component>
 </project>

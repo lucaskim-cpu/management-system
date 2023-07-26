@@ -9,6 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
@@ -43,4 +44,29 @@ public class UserController {
         userService.createUser(userDto);
         return "redirect:/users";
     }
+
+    @GetMapping("users/{userId}/edit")
+    public String editUser(@PathVariable("userId") Long userId,
+                           Model model){
+        UserDto userDto = userService.getUserById(userId);
+        model.addAttribute("user", userDto);
+        return "edit_user";
+    }
+
+    @PostMapping("/users/{userId}")
+    public String updateUser(@PathVariable("userId") Long userId,
+                             @Valid @ModelAttribute("user") UserDto userDto,
+                             BindingResult result,
+                             Model model){
+        if(result.hasErrors()){
+            model.addAttribute("user", userDto);
+            return "edit_user";
+        }
+        userDto.setId(userId);
+        userService.updateUser(userDto);
+        return "redirect:/users";
+    }
+
+
+
 }
